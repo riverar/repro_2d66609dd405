@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.Windows.WinmdGenerator/0.40.14-preview">
+    <PropertyGroup Label="Globals">
+        <OutputWinmd>Output.winmd</OutputWinmd>
+        <WinmdVersion>255.255.255.255</WinmdVersion>
+        <AdditionalIncludes>idl/</AdditionalIncludes>
+    </PropertyGroup>
+    <ItemGroup>
+        <Idls Include="simple.idl" />
+        <Partition Include="simple.cpp">
+            <TraverseFiles>$(CompiledHeadersDir)\simple.h</TraverseFiles>
+            <Namespace>Simple</Namespace>
+        </Partition>
+    </ItemGroup>
+</Project>

@@ -1,0 +1,15 @@
+import "objidl.idl";
+import "oaidl.idl";
+import "propidl.idl";
+import "inspectable.idl";
+
+[
+    object,
+    uuid(b1ab3466-727d-4db3-96a2-17613c3d2722),
+    local,
+    pointer_default(unique)
+]
+interface ISimple: IInspectable
+{
+    HRESULT DoSomethingSimple();
+}
